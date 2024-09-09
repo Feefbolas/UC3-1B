@@ -3,7 +3,49 @@ Boas vindas! Este é seu caderno virtual. Aqui você deverá guardar todos os co
 
 
 ## Conteúdo Técnico
-separando array 20/08
+
+*array + promt 09/09/24*
+
+const escolha = prompt("qual fruta você deseja?");
+var listadefrutas = ["maçã", "banana", "jabuticaba"];
+var pos = listadefrutas.indexOf(escolha.toLowerCase());
+
+console.log(`suas ${listadefrutas[pos]} estão prontas para entrega`);
+
+*array(2) 09/09/24*
+//Array
+
+const crepusculos = [
+  "Duda",
+  "Leco",
+  "Ary",
+  "Fernando",
+  "Gustavo",
+  "Mamão",
+  "Eutor"
+];
+
+console.log(crepusculos);
+
+// contando os elemetos
+console.log(crepusculos.length);
+
+// usando for para lista horizontal
+
+*switch case 09/09/24*
+
+let num1 = prompt("Digitr um número");
+switch (num1) {
+  case "1":
+    console.log("");
+    break;
+  case "2":
+    break;
+  default:
+}
+
+*separando array 20/08*
+
 
 const livros = ["feef", "feef"];
 const tamanhoLivros = livros.length;
@@ -14,7 +56,7 @@ const corredorA2 = livros.slice(tamanhoLivros / 2);
 console.log("os livros da A1 são:", corredorA1);
 console.log("os livros da A2 são:", corredorA2);
 
-concatenando array 20/08
+*concatenando array 20/08*
 
 const livros = ["feef", "feeef"];
 
@@ -24,7 +66,7 @@ const juntarLivros = livros.concat(hqs);
 
 console.log(juntarLivros);
 
-splice 20/08
+*splice 20/08*
 
 const pessoas = ["feef", "duud", "daad"];
 promt = ("qual pessoa entrou?")
@@ -38,6 +80,45 @@ console.log(promt)
 
 
 ## Atividades desenvolvidas
-Escreva aqui as atividades desenvolvidas em sala e para casa. Você pode detelhar a atividade e usar links das atividades do codepen e vídeos desenvolvidos em sala. 
+
+
+*ATIVIDADE LIVROS 09/09/24*
+const livros = [
+  "javascript assertivo",
+  "Engenharia de teste",
+  "clead code",
+  "scrum",
+  "guia html5 e csss3",
+  "ECMAScript 6",
+  "mongoDB"
+];
+
+livros.sort();
+
+console.log(livros);
+
+console.log(livros.length)
+
+*ATIVIDADE SITUAÇÃO PROBLEMA COM ARRAY 09/09/24*
+//situação problema: quero saber quem e quantos são os integrantes homens do crepusculo, e quem são os integrantes mais altos.
+
+var crepusculo = ["fernando", "gustabo", "mamao", "BENTO", "MBAPPE", "heitor"];
+
+var altos = crepusculo.slice(1, 4);
+
+console.log(altos);
+
+console.log(crepusculo[0]);
+console.log(crepusculo[1]);
+console.log(crepusculo[2]);
+console.log(crepusculo[3]);
+console.log(crepusculo[4]);
+console.log(crepusculo[5]);
+
+var tamanho = crepusculo.length;
+console.log(tamanho);
+link:https://codepen.io/feef-the-styleful/pen/VwJqWzB?editors=1112
+
+
 
 
