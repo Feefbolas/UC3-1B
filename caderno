@@ -4,6 +4,97 @@ OIII, esse é o caderno de fernando soares da silva neto do 1B :)
 
 ## Conteúdo Técnico
 
+FUNCTION 07/10/24
+
+
+//essa função replica coisas(toda vez que chamar a função e colocar qualquer informação dentro, ela vai responder com "nao".)
+
+function feef() {
+  return "vamos ver suas notas";
+}
+
+console.log(feef("quero somar minhas notas"));
+
+//essa função muntiliplica qualquer numero colocado em 2
+
+function dobro(num) {
+  return num * 2;
+}
+console.log(dobro(3));
+
+//essa função muntiliplica qualquer numero colocado em 3
+
+function triplo(num) {
+  return num * 3;
+}
+console.log(triplo(3));
+
+//essa função consegue dividir ou multiplicar notas ou numbers diferentes.
+
+function calcularMedia(nota1, nota2, nota3) {
+  const soma = nota1 + nota2 + nota3;
+  const media = soma / 3;
+  return media;
+}
+
+console.log(calcularMedia(1, 23, 80));
+
+//função arrow
+
+const falar = () => "oi tudo bom";
+
+const quadruplo = (num) => num * 4;
+
+console.log(falar("ola"));
+console.log(quadruplo(2));
+
+
+
+
+IF ELSE ELSE IF 07/10/24
+
+
+// se if for falso, o console irá executar o else.
+const morte = "nao";
+const resposta = "aaaa";
+const pergunta = prompt("aaaa?");
+if ("aaaa") {
+  console.log(resposta);
+} else {
+  console.log(morte);
+}
+
+
+PRATICANDO FUNCTION 07/10/24
+
+//praticando function, essa function vai somar numeros ou subtrair, dependendo dos numeros, parseint vão transformar numeros de string para number, e parse float transforma números decimais.
+
+function soma(num1, num2) {
+  return num1 + num2;
+}
+function menos(num1, num2) {
+  return num1 - num2;
+}
+
+const compra1 = prompt("qual o valor da primeira compra?");
+const compra2 = prompt("qual o valor da segunda compra?");
+
+const compra1formatada = parseFloat(compra1);
+const compra2formatada = parseFloat(compra2);
+
+if (compra1formatada > compra2formatada) {
+  console.log(soma(compra1formatada, compra2formatada));
+} else if (compra1formatada < compra2formatada) {
+  console.log(menos(compra1formatada, compra2formatada));
+} else {
+  console.log("erro po");
+}
+
+
+
+
+
+
 *array + promt 09/09/24*
 
 const escolha = prompt("qual fruta você deseja?");
@@ -80,6 +171,57 @@ console.log(promt)
 
 
 ## Atividades desenvolvidas
+
+SITUAÇÃO PROBLEMA
+//situação problema: quero saber quem e quantos são os integrantes homens do meu grupo , e quem são os integrantes mais altos.
+
+var crepusculo = ["fernando", "gustabo", "mamao", "BENTO", "MBAPPE", "heitor"];
+
+var altos = crepusculo.slice(1, 4);
+
+console.log(altos);
+
+console.log(crepusculo[0]);
+console.log(crepusculo[1]);
+console.log(crepusculo[2]);
+console.log(crepusculo[3]);
+console.log(crepusculo[4]);
+console.log(crepusculo[5]);
+
+var tamanho = crepusculo.length;
+console.log(tamanho);
+
+
+
+ATIVIDADE ANIME/JOGO/BRINCADEIRA
+
+
+<html>
+
+<body>
+  <div class="full-screen-image">
+    <img src="https://i.postimg.cc/8zydb2fj/1ecac767-acfb-4766-80ff-d3008dcd4f17.jpg" </div>
+</body>
+
+</html>
+
+
+
+
+function ataque() {
+  return "voce bate nele, ele não sente nada e te mata";
+}
+
+var ação = prompt(
+  "você é um homem loiro chamado hakari, você decidiu andar por ai procurando gente para espancar, um homem extremamente palido e musculoso te chamou atenção, o que voce deseja fazer?"
+);
+if (ação == "bater nele") {
+  console.log(ataque(ataque));
+} else if (ação == "não mexer com ele") {
+  console.log("você ignora e vai embora");
+} else {
+  console.log("ele te ve olhando pra ele, e te mata");
+}
 
 
 *ATIVIDADE LIVROS 09/09/24*
