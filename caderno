@@ -5,7 +5,36 @@ link do meu codepen:https://codepen.io/feef-the-styleful
 
 ## Conteúdo Técnico
 
-FUNCTION 07/10/24
+
+PRATICANDO FUNCTION 11/10/24 https://codepen.io/feef-the-styleful/pen/QWeNJKQ
+
+
+//praticando function, essa function vai somar numeros ou subtrair, dependendo dos numeros, parseint vão transformar numeros de string para number, e parse float transforma números decimais.
+
+function soma(num1, num2) {
+  return num1 + num2;
+}
+function menos(num1, num2) {
+  return num1 - num2;
+}
+
+const compra1 = prompt("qual o valor da primeira compra?");
+const compra2 = prompt("qual o valor da segunda compra?");
+
+const compra1formatada = parseFloat(compra1);
+const compra2formatada = parseFloat(compra2);
+
+if (compra1formatada > compra2formatada) {
+  console.log(soma(compra1formatada, compra2formatada));
+} else if (compra1formatada < compra2formatada) {
+  console.log(menos(compra1formatada, compra2formatada));
+} else {
+  console.log("erro po");
+}
+
+
+
+FUNCTION 07/10/24 https://codepen.io/feef-the-styleful/pen/GRbeKjj
 
 
 //essa função replica coisas(toda vez que chamar a função e colocar qualquer informação dentro, ela vai responder com "nao".)
@@ -52,7 +81,7 @@ console.log(quadruplo(2));
 
 
 
-IF ELSE ELSE IF 07/10/24
+IF ELSE ELSE IF 07/10/24 https://codepen.io/feef-the-styleful/pen/ZEgzZxP
 
 
 // se if for falso, o console irá executar o else.
@@ -66,7 +95,7 @@ if ("aaaa") {
 }
 
 
-PRATICANDO FUNCTION 07/10/24
+PRATICANDO FUNCTION 07/10/24 https://codepen.io/feef-the-styleful/pen/QWeNJKQ
 
 //praticando function, essa function vai somar numeros ou subtrair, dependendo dos numeros, parseint vão transformar numeros de string para number, e parse float transforma números decimais.
 
@@ -96,7 +125,7 @@ if (compra1formatada > compra2formatada) {
 
 
 
-*array + promt 09/09/24*
+*array + promt 09/09/24* https://codepen.io/feef-the-styleful/pen/ZEdvxgJ
 
 const escolha = prompt("qual fruta você deseja?");
 var listadefrutas = ["maçã", "banana", "jabuticaba"];
@@ -104,7 +133,7 @@ var pos = listadefrutas.indexOf(escolha.toLowerCase());
 
 console.log(`suas ${listadefrutas[pos]} estão prontas para entrega`);
 
-*array(2) 09/09/24*
+*array(2) 09/09/24* https://codepen.io/feef-the-styleful/pen/rNEpepN
 //Array
 
 const crepusculos = [
@@ -124,7 +153,7 @@ console.log(crepusculos.length);
 
 // usando for para lista horizontal
 
-*switch case 09/09/24*
+*switch case 09/09/24* https://codepen.io/feef-the-styleful/pen/PoryGzm
 
 let num1 = prompt("Digitr um número");
 switch (num1) {
@@ -136,7 +165,7 @@ switch (num1) {
   default:
 }
 
-*separando array 20/08*
+*separando array 20/08* https://codepen.io/feef-the-styleful/pen/bGPLXoE
 
 
 const livros = ["feef", "feef"];
@@ -148,7 +177,7 @@ const corredorA2 = livros.slice(tamanhoLivros / 2);
 console.log("os livros da A1 são:", corredorA1);
 console.log("os livros da A2 são:", corredorA2);
 
-*concatenando array 20/08*
+*concatenando array 20/08* https://codepen.io/feef-the-styleful/pen/vYqdozo
 
 const livros = ["feef", "feeef"];
 
@@ -158,7 +187,7 @@ const juntarLivros = livros.concat(hqs);
 
 console.log(juntarLivros);
 
-*splice 20/08*
+*splice 20/08* https://codepen.io/feef-the-styleful/pen/bGPLXoE
 
 const pessoas = ["feef", "duud", "daad"];
 promt = ("qual pessoa entrou?")
@@ -173,7 +202,70 @@ console.log(promt)
 
 ## Atividades desenvolvidas
 
-SITUAÇÃO PROBLEMA
+
+const mes = prompt("em qual mês você está?");
+
+FUNCTION + SWITCH CASE https://codepen.io/feef-the-styleful/pen/QWeNJKQ
+
+
+function feriado(feriados) {
+  switch (feriados) {
+    case "janeiro":
+      alert("Dia da Confraternização Universal");
+      break;
+    case "fevereiro":
+      alert("carnaval, quarta feira de cinzas");
+      break;
+    case "março":
+      alert("sexta feira santa, dia da mulher");
+      break;
+    case "abril":
+      alert("dia do tiradentes");
+      break;
+    case "maio":
+      alert("Corpus Christ");
+      break;
+    case "junho":
+      alert("São João");
+      break;
+    case "julho":
+      alert("não tem :_:");
+      break;
+    case "agosto":
+      alert("não tem :_:");
+      break;
+    case "setembro":
+      alert("Dia de Nossa Senhora das Dores");
+      break;
+    case "outubro":
+      alert("Dia de Nossa Senhora de Aparecida");
+      break;
+    case "novembro":
+      alert("Dia do finados, Proclamação da República");
+      break;
+    case "dezembro":
+      alert("natal");
+      break;
+  }
+
+
+
+
+ARRAY + FUNCTION https://codepen.io/feef-the-styleful/pen/ZEgpXjK
+
+//array
+
+function entrarJogo(listaDeJogos) {
+  return listaDeJogos.join(" metal gear ");
+}
+
+let listaDeJogos = ["god of war", "shadow of the colossus", "far cry 3"];
+
+console.log(entrarJogo(listaDeJogos));
+
+
+
+SITUAÇÃO PROBLEMA https://codepen.io/feef-the-styleful/pen/VwJqWzB
 //situação problema: quero saber quem e quantos são os integrantes homens do meu grupo , e quem são os integrantes mais altos.
 
 var crepusculo = ["fernando", "gustabo", "mamao", "BENTO", "MBAPPE", "heitor"];
@@ -194,7 +286,7 @@ console.log(tamanho);
 
 
 
-ATIVIDADE ANIME/JOGO/BRINCADEIRA
+ATIVIDADE ANIME/JOGO/BRINCADEIRA https://codepen.io/feef-the-styleful/pen/RwXbbry
 
 
 <html>
@@ -225,7 +317,7 @@ if (ação == "bater nele") {
 }
 
 
-*ATIVIDADE LIVROS 09/09/24*
+*ATIVIDADE LIVROS 09/09/24* https://codepen.io/feef-the-styleful/pen/poXpygQ
 const livros = [
   "javascript assertivo",
   "Engenharia de teste",
@@ -242,7 +334,7 @@ console.log(livros);
 
 console.log(livros.length)
 
-*ATIVIDADE SITUAÇÃO PROBLEMA COM ARRAY 09/09/24*
+*ATIVIDADE SITUAÇÃO PROBLEMA COM ARRAY 09/09/24* https://codepen.io/feef-the-styleful/pen/VwJqWzB
 //situação problema: quero saber quem e quantos são os integrantes homens do crepusculo, e quem são os integrantes mais altos.
 
 var crepusculo = ["fernando", "gustabo", "mamao", "BENTO", "MBAPPE", "heitor"];
