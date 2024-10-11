@@ -200,7 +200,35 @@ console.log(pessoas);
 console.log(promt)
 
 
-## Atividades desenvolvidas
+STRING E VARIAVEIS https://codepen.io/feef-the-styleful/pen/abepOGJ?editors=0012
+
+//variaveis
+
+const nome = "feef";
+let idade = "16";
+var genero = "homem";
+
+
+
+
+
+
+
+
+
+## ATIVIDADES DESENVOLVIDAS 
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 const mes = prompt("em qual mês você está?");
